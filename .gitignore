@@ -1,0 +1,10 @@
+.DS_Store
+
+# Ignore Claude Code local settings and state
+.claude/**
+
+# But include skills and agents (these should be versioned)
+!.claude/skills/
+!.claude/skills/**
+!.claude/agents/
+!.claude/agents/**

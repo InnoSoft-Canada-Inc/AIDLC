@@ -1,0 +1,77 @@
+# Project Convention Extensions Directory
+
+This directory is where teams add their project-specific convention files during setup.
+
+## Purpose
+
+Project convention extensions define your team's standards and are loaded during
+Construction phase to enforce those standards automatically. Unlike the framework's
+built-in extensions (security/, documentation/), these files are authored by YOUR
+team for YOUR project.
+
+## Why This Directory Is Empty
+
+This directory is intentionally empty in the framework repository. Each team creates
+their own convention files here during project setup. The framework provides the
+structure; your team provides the content.
+
+## Common Convention Files
+
+Teams typically create some or all of the following:
+
+### folder-conventions.md
+Your project's layering rules and what constitutes a violation.
+- Which directories can import from which
+- Architectural boundary enforcement
+- Module organization rules
+
+### api-conventions.md
+Your API design standards.
+- URL naming patterns
+- Request/response conventions
+- Error response formats
+- Pagination standards
+- Versioning rules
+
+### naming-conventions.md
+File, class, function, and schema naming rules.
+- File naming (kebab-case, camelCase, etc.)
+- Class and interface naming
+- Function and method naming
+- Database table and column naming
+- Environment variable naming
+
+### testing-conventions.md
+Test structure, fixture rules, what may and may not be mocked.
+- Test file organization
+- Test naming conventions
+- Fixture and factory patterns
+- Mocking boundaries
+- Coverage requirements
+
+## How to Create Convention Files
+
+See SETUP.md for detailed guidance on writing convention files for your project.
+
+Each convention file should follow the extension format used by other extensions
+(see extensions/security/ for examples):
+
+1. Define rules with unique IDs (e.g., FOLDER-01, API-01)
+2. Include verification criteria for each rule
+3. Specify whether violations are blocking or advisory
+4. Provide examples of compliant and non-compliant patterns
+
+## Gitignore Note
+
+This directory is gitignored in the framework repository so team convention files
+are never accidentally committed to the framework. Your convention files live only
+in your own project repository.
+
+When you clone this framework to start a new project, you'll create your own
+convention files here and commit them to YOUR project's repository.
+
+## Reference
+
+- Section 7 of the framework spec describes project convention extensions
+- SETUP.md STEP 3 guides you through creating convention files
+- extensions/security/baseline/ shows the structure to follow
