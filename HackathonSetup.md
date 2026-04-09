@@ -1,24 +1,29 @@
 # Hackathon Setup
 
 We are using Orbit's AI-DLC version for this exercise.
+Orbit's AI-DLC is Claude Code dependent.
 
 ## Clone AI-DLC process documents
+
+Clone the repository.
 
 ```
 git clone https://github.com/InnoSoft-Canada-Inc/AIDLC.git
 ```
-Clone this repository. We will copy contents of this folder into another folder later.
+ We will copy contents of this folder into another folder later.
 
 ## Setup folder structure
 
-Example setup that includes three projects.
+Since most ideas will include more than one project (front-end and back-end), here is an example setup that includes three projects.
 
-Easiest way to do this will be to create a folder called `Code` and have required projects cloned into it.
+Easiest way to do this will be to create a folder called `Code` (or something that makes sense based on underlying projects) and have required projects cloned/moved into it.
+
+We will be working in `Code` folder during our Hackathon.
 
 Once cloned, rename all project specific CLAUDE.md files to CLAUDE-{projectname}.md.
 
 ```
-Code/                              # Open this folder in VSCode or Claude Code terminal
+Code/                              # Open this folder in VSCode, Claude Code terminal
 │
 └── Fusion                         # Fusion Repo (includes Database folder)
 |   |__ {Existing Code}            
@@ -33,9 +38,9 @@ Code/                              # Open this folder in VSCode or Claude Code t
 
 ## Copy AI-DLC process files
 
-Open previously cloned AIDLC folder and copy all folders and files into `Code/` (your workspace folder).
+Open previously cloned AIDLC folder and copy all folders and files into `Code/`
 
-After copy, your workspace should look like below.
+After copying, your workspace should look like below.
 
 ```
 Code/                              # Open this folder in VSCode or Claude Code terminal
