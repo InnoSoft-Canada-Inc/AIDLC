@@ -91,6 +91,23 @@ Code/                              # Open this folder in VSCode or Claude Code t
 │   └── documentation/             # Approval gate addendums
 ```
 
+## Reference existing Claude files
+
+Open CLAUDE.md file (the one that came from AI-DLC clone), and reference project specific CLAUDE-{projectname}.md file in it. 
+
+Put it at the top of CLAUDE.md.
+
+```
+# Project specific references
+- `{projectname}/CLAUDE-{projectname}.md`
+- `Fusion/CLAUDE-Fusion.md`
+- `FusionCore/CLAUDE-FusionCore.md`
+- `FusionGoApp/CLAUDE-FusionGoApp.md`
+- `FusionPortal/CLAUDE-FusionPortal.md`
+```
+
+It will provide benefits during the process by helping establish existing practices since bunch of our projects are brownfield in nature.
+
 ## Check readiness
 
 Initialize Claude in terminal and run this statement
