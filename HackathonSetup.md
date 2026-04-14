@@ -137,4 +137,34 @@ It will create a new folder `aidlc-docs/` under main folder and build knowledge 
 
 ## During Hackathon
 
-*Work in progress*
+### Initialize the project if you haven't already
+
+Add a new file named, new-feature-spec.md file under main directory you are working in. for e.g `c:/Code/new-feature-spec.md`
+
+Use this file to prepare you story or work item using below format,
+
+```
+Title: {Enter story title. for e.g As a member, I should be able to payoff an invoice that is unpaid on my profile}
+
+Description:
+....
+
+Acceptance Criteria: 
+....
+
+Projects: (Mention exact name of folders you want to include code in including both frontend and backend)
+- FusionCore
+- FusionPortal
+.....
+
+```
+
+### Inception Phase
+
+From now onwards, you will be working with AI to implement the feature. 
+
+Run this prompt to start,
+
+```
+Using AI-DLC, build @new-feature-spec.md
+```
